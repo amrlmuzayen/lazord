@@ -22,12 +22,11 @@ class PageController extends Controller
     }
 
 
+    
   
     public function labServices()
     {
-        $products = Product::where('is_active', true)
-            ->orderBy('sort_order')
-            ->get();
+        $products = Product::where('is_active', true)->orderBy('sort_order')->get();
 
         return view('pages.lab-services', compact('products'));
     }
@@ -36,9 +35,10 @@ class PageController extends Controller
     public function pricing()
     {
         $plans = Plan::with('features')->orderBy('sort_order')->get();
-
+    
         return view('pages.pricing', compact('plans'));
     }
+
 
 
     public function solutions()
@@ -49,4 +49,6 @@ class PageController extends Controller
 
         return view('pages.solutions', compact('featured', 'side'));
     }
+    
+
 }

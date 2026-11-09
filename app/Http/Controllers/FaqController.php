@@ -14,5 +14,6 @@ class FaqController extends Controller
 
         // إرسال المتغير $faqs إلى صفحة why.blade.php
         return view('pages.why', compact('faqs'));
+        
     }
 }

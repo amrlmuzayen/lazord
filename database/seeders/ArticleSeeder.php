@@ -32,5 +32,6 @@ foreach ($articles as $i => $data) {
         $data + ['sort_order' => $i + 1]
     );
 }
+
     }
 }

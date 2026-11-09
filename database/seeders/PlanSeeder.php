@@ -72,5 +72,6 @@ foreach ($plans as $i => $data) {
         ]);
     }
 }
+
     }
 }

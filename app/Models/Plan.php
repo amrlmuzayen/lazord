@@ -9,7 +9,7 @@ class Plan extends Model
 {
     protected $fillable = [
         'name', 'badge', 'price_label', 'price_period',
-        'description', 'cta_text', 'is_popular', 'sort_order',
+        'description', 'cta_text', 'is_popular', 'sort_order'
     ];
 
     public function features(): HasMany
